@@ -9,17 +9,30 @@
             <li>Livewire</li>
         </ul>
         <p v-show="view_email">Mande uma mensagem para: {{ email }}</p>
+        <p>Para acessar meu portifólio 
+            <a v-bind:href="my_link" target="_blank">
+                Basta clicar aqui
+            </a>
+        </p>
+
+        <Picture />
     </div>
 </template>
 
 <script>
+import Picture from './Picture.vue';
+
     export default {
         name: "Information",
+        components: {
+            Picture
+        },
         data() {
             return {
                 in_work: true, 
                 view_email: true,
-                email: 'lucioazevedo0405@gmail.com'
+                email: 'lucioazevedo0405@gmail.com',
+                my_link: 'https://google.com'
             }
         }
     }
