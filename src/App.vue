@@ -14,7 +14,7 @@
     components: {
       FirstComponent,
       LifeCycle,
-      Person
+      Person,
     }
   }
 </script>

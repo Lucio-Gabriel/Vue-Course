@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Esta é a descrição da pessoa: {{ name }}</h2>
-        <information />
+        <Information />
         <Form /> 
     </div>
 </template>
